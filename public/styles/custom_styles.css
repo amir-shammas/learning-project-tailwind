@@ -1,0 +1,33 @@
+@media screen and (max-width: 800px) {
+  #toggle_nav:checked + label + nav {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+
+  #toggle_nav:checked + label span.line_mid {
+    opacity: 0;
+  }
+
+  #toggle_nav:checked + label span.line_top {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    position: relative;
+    top: 6px;
+  }
+
+  #toggle_nav:checked + label span.line_bottom {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    position: relative;
+    bottom: 6px;
+  }
+}
